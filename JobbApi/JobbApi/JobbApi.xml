@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JobbApi</name>
+    </assembly>
+    <members>
+        <member name="M:JobbApi.Api.Manage.Controllers.CityController.Create(JobbApi.Api.Manage.DTOs.CityCreateDto)">
+            <summary>
+            Create City
+            </summary>
+            <param name="cityCreate"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

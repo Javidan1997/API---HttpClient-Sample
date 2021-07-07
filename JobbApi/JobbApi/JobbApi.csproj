@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20210426073939_JobsTableCreated.cs" />
+    <Compile Remove="Data\Migrations\20210426073939_JobsTableCreated.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210426081142_JobsTableCreated.cs" />
+    <Compile Remove="Data\Migrations\20210426081142_JobsTableCreated.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210426085831_JobsTableCreated.cs" />
+    <Compile Remove="Data\Migrations\20210426085831_JobsTableCreated.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210426122250_IconColumnAddedIntoCategory.cs" />
+    <Compile Remove="Data\Migrations\20210426122250_IconColumnAddedIntoCategory.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210428131254_CandidateTableCreated.cs" />
+    <Compile Remove="Data\Migrations\20210428131254_CandidateTableCreated.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210501135932_IsBookmarkedAddedIntoJob.cs" />
+    <Compile Remove="Data\Migrations\20210501135932_IsBookmarkedAddedIntoJob.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\companies\" />
+    <Folder Include="wwwroot\uploads\users\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.10.9" />
+    <PackageReference Include="SendGrid" Version="9.23.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+
+</Project>
